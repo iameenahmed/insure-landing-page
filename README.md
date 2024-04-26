@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor.io/solutions/insure-landing-page](https://www.frontendmentor.io/solutions/insure-landing-page)
+- Solution URL: [frontendmentor.io/solutions/insure-landing-page](https://www.frontendmentor.io/solutions/insure-landing-page-using-reactjs-A_wms2Knxy)
 
 ## My process
 
