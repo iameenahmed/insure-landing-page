@@ -31,7 +31,7 @@ const Header = () => {
         <nav>
           {/* Mobile Navigation */}
           {isOpen && (
-            <ul className="fixed inset-0 top-20 z-10 space-y-10 bg-DarkViolet bg-nav bg-bottom bg-no-repeat pt-20 text-center text-3xl uppercase tracking-wide text-white">
+            <ul className="fixed inset-0 top-20 z-20 space-y-10 bg-DarkViolet bg-nav bg-bottom bg-no-repeat pt-20 text-center text-3xl uppercase tracking-wide text-white md:hidden">
               {navItems.map((item, index) => {
                 return (
                   <li key={index} className="cursor-pointer hover:opacity-70">
