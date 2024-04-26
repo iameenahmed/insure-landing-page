@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="font-Karla">
       <Header />
       <main>
         <Hero />

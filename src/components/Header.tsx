@@ -1,22 +1,68 @@
 import logo from "../assets/logo.svg";
+import hamburger from "../assets/icon-hamburger.svg";
+import close from "../assets/icon-close.svg";
+import { useState } from "react";
 
 const Header = () => {
   const navItems = ["How we work", "Blog", "Account"];
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header>
-      <div>
-        <img src={logo} alt="logo" />
+    <header className="flex items-center justify-between px-4 py-6 lg:px-[10.5rem] lg:py-5">
+      <div className="inline-flex w-full items-center justify-between lg:w-auto">
+        <div>
+          <img src={logo} alt="logo" />
+        </div>
+
+        <div className="md:hidden">
+          {isOpen ? (
+            <button aria-label="open menu" onClick={() => setIsOpen(false)}>
+              <img src={close} alt="close icon" />
+            </button>
+          ) : (
+            <button aria-label="close menu" onClick={() => setIsOpen(true)}>
+              <img src={hamburger} alt="hamburger icon" />
+            </button>
+          )}
+        </div>
       </div>
+
       <div>
         <nav>
-          <ul>
-            {navItems.map((item, index) => {
-              return <li key={index}>{item}</li>;
-            })}
-            <li>
-              <button>View plans</button>
-            </li>
-          </ul>
+          {/* Mobile Navigation */}
+          {isOpen && (
+            <ul className="fixed inset-0 top-20 z-10 space-y-10 bg-DarkViolet bg-nav bg-bottom bg-no-repeat pt-20 text-center text-3xl uppercase tracking-wide text-white">
+              {navItems.map((item, index) => {
+                return (
+                  <li key={index} className="cursor-pointer hover:opacity-70">
+                    {item}
+                  </li>
+                );
+              })}
+              <li>
+                <button className="cursor-pointer border-2 border-white px-16 py-3 uppercase hover:opacity-70 md:border-DarkViolet">
+                  View plans
+                </button>
+              </li>
+            </ul>
+          )}
+          {/* Desktop navigation */}
+          <div className="hidden md:inline-block">
+            <ul className="flex items-center gap-7 font-bold uppercase tracking-wider text-DarkGrayishViolet">
+              {navItems.map((item, index) => {
+                return (
+                  <li key={index} className="cursor-pointer hover:opacity-70">
+                    {item}
+                  </li>
+                );
+              })}
+              <li>
+                <button className="cursor-pointer border-2 border-white px-5 py-1.5 font-bold uppercase text-DarkViolet hover:opacity-70 md:border-DarkViolet">
+                  View plans
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
