@@ -3,7 +3,7 @@ import { socialLinks, links } from "../data/footer";
 
 const Footer = () => {
   return (
-    <div className="bg-VeryLightGray bg-footer-mobile bg-top bg-no-repeat px-6 py-20 md:bg-footer md:bg-left-top md:p-16 xl:px-[10.5rem]">
+    <div className="bg-VeryLightGray bg-footer-mobile bg-top bg-no-repeat px-6 py-20 text-sm md:bg-footer md:bg-left-top md:p-16 xl:px-[10.5rem]">
       <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
         <div>
           <img src={logo} alt="logo" />

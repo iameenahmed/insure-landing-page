@@ -47,7 +47,7 @@ const Header = () => {
             </ul>
           )}
           {/* Desktop navigation */}
-          <div className="hidden md:inline-block">
+          <div className="hidden text-sm md:inline-block">
             <ul className="flex items-center gap-7 font-bold uppercase tracking-wider text-DarkGrayishViolet">
               {navItems.map((item, index) => {
                 return (
@@ -57,7 +57,7 @@ const Header = () => {
                 );
               })}
               <li>
-                <button className="cursor-pointer border-2 border-white px-5 py-1.5 font-bold uppercase text-DarkViolet hover:opacity-70 md:border-DarkViolet">
+                <button className="cursor-pointer border-2 border-white px-6 py-2 font-bold uppercase text-DarkViolet transition-colors duration-300 hover:bg-DarkViolet hover:text-white md:border-DarkViolet">
                   View plans
                 </button>
               </li>
