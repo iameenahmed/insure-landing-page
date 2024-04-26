@@ -8,8 +8,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between px-4 py-6 lg:px-[10.5rem] lg:py-5">
-      <div className="inline-flex w-full items-center justify-between lg:w-auto">
+    <header className="flex items-center justify-between px-4 py-6 lg:px-20 lg:py-5 xl:px-[10.5rem]">
+      <div className="inline-flex w-full items-center justify-between md:w-auto">
         <div>
           <img src={logo} alt="logo" />
         </div>

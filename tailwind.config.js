@@ -17,12 +17,8 @@ export default {
       backgroundImage: {
         footer: "url('/src/assets/bg-pattern-footer-desktop.svg')",
         "footer-mobile": "url('/src/assets/bg-pattern-footer-mobile.svg')",
-        "hero-left": "url('/src/assets/bg-pattern-intro-left-desktop.svg')",
         "hero-left-mobile":
           "url('/src/assets/bg-pattern-intro-left-mobile.svg')",
-        "hero-right": "url('/src/assets/bg-pattern-intro-right-desktop.svg')",
-        "hero-right-mobile":
-          "url('/src/assets/bg-pattern-intro-right-mobile.svg')",
         "how-we-work": "url('/src/assets/bg-pattern-how-we-work-desktop.svg')",
         "how-we-work-mobile":
           "url('/src/assets/bg-pattern-how-we-work-mobile.svg')",

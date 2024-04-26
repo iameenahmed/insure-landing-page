@@ -3,7 +3,7 @@ import { socialLinks, links } from "../data/footer";
 
 const Footer = () => {
   return (
-    <div className="bg-VeryLightGray bg-footer-mobile bg-top bg-no-repeat px-6 py-20 md:bg-footer md:bg-left-top md:px-[10.5rem] md:py-16">
+    <div className="bg-VeryLightGray bg-footer-mobile bg-top bg-no-repeat px-6 py-20 md:bg-footer md:bg-left-top md:p-16 xl:px-[10.5rem]">
       <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
         <div>
           <img src={logo} alt="logo" />
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="my-12 bg-VeryDarkViolet md:my-8" />
-      <div className="text-center font-bold uppercase tracking-widest md:grid md:grid-cols-4 md:text-start">
+      <div className="text-center font-bold uppercase tracking-widest md:grid md:grid-cols-2 md:gap-y-8 md:text-start lg:grid-cols-4">
         {links.map(({ title, links }, index) => {
           return (
             <div key={index}>
